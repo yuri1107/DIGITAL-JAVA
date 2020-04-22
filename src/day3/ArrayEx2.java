@@ -1,6 +1,6 @@
 package day3;
 
-import java.awt.desktop.SystemEventListener;
+
 
 public class ArrayEx2 {
 
