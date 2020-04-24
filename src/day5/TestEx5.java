@@ -11,7 +11,26 @@ public class TestEx5 {
 		 * abcde
 		 * 
 		 * 문자를 유니코드로 변환해서 유니코드를 하나씩 증가, 출력되는 문자의 수도 하나씩 증가
-		 * 
+		*/
+		int num = 5;
+		
+		for(int i=0; i < num; i++) {
+			for(int j=0; j<=i; j++) {
+				
+				System.out.printf("%d",j);
+			}
+			System.out.println();
+			
+		}
+
+		char ch = 'a'+1;
+		ch = (char)(ch + 1);
+		System.out.println(ch);
+		
+		
+		
+		
+		/*
 		 * 
 		 * 두 정수를 입력하면 다음과 같이 출력되도록 작성하세요. 자리수맞춰서 (그럼 printf나 print써서 %nd 해서 자리수맞추기)
 		 * 3 5   앞의 숫자가 행, 뒤의 숫자가 한 줄에 들어갈 갯수
