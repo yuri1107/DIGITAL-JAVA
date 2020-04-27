@@ -1,0 +1,24 @@
+﻿에러 내용
+
+
+변수명 cannot be resolved to a variable
+원인 : 변수를 선언하지 않고 사용해서.
+해결 : 변수를 선언
+
+The local variable 변수명 may not have been initialized
+원인 : 변수를 초기화 하지 않고 사용해서.
+해결 : 변수 초기화
+
+Duplicate local variable 변수명
+원인 : 변수를 중복 선언해서.
+해결 : 변수명수정 또는 변수 삭제
+
+Syntax error on token "else", delete this token
+원인 : if문이 ;에 의해 끝난 후 else가 온 경우
+해결 : 세미콜른 지우면 됨
+
+The left-hand side of an assignment must be a variable
+상황 : else if를 써야하는데 else를 쓰고 조건문을 쓰는경우 해당 조건문이 실행문으로 인식이 되고 따라서 왼쪽에 변수명이 와야한다.
+해결 : else if를 쓰던지 else의 조건문을 제거
+
+
