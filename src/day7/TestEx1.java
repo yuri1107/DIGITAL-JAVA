@@ -67,7 +67,7 @@ public class TestEx1 {
 			min = max;
 			max = tmp;
 		}
-		return (int)(Math.random()*(max-min+1)+min);
+		return (int)(Math.random()*(max-min+1)+min); //이건 공식 그냥 외우기
 	}
 	
 	//배열 출력하기
