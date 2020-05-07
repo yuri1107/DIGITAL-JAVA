@@ -1,6 +1,6 @@
 package student;
 
-public class SubjectT {
+public class Subject {
 	private String title;
 	private int midterm;
 	private int finals;
@@ -8,15 +8,14 @@ public class SubjectT {
 	private int attendance;
 	
 	public void print() {
-		System.out.println("======="+title+"성적=======");
+		System.out.println("----"+title+"성적----");
 		System.out.println("중간고사 : " + midterm);
-		System.out.println("기말고사 : " + midterm);
-		System.out.println("수행평가 : " + midterm);
-		System.out.println("출석점수 : " + midterm);
-		System.out.println("=======================");
+		System.out.println("기말고사 : " + finals);
+		System.out.println("수행평가 : " + performance);
+		System.out.println("출석점수 : " + attendance);
+		System.out.println("--------------");
 	}
-
-	public SubjectT(String title, int midterm, int finals, int performance, int attendance) {
+	public Subject(String title, int midterm, int finals, int performance, int attendance) {
 		super();
 		this.title = title;
 		this.midterm = midterm;
@@ -24,14 +23,19 @@ public class SubjectT {
 		this.performance = performance;
 		this.attendance = attendance;
 	}
-	
-	public Subject (Subject subject) {
+
+	public Subject(Subject subject) {
 		midterm = subject.midterm;
 		finals = subject.finals;
 		performance = subject.performance;
 		attendance = subject.attendance;
+		title = subject.title;
 	}
 
+	
+	
+	
+	//getter, setter 설정
 	public String getTitle() {
 		return title;
 	}
@@ -71,6 +75,6 @@ public class SubjectT {
 	public void setAttendance(int attendance) {
 		this.attendance = attendance;
 	}
-
+	
 	
 }
