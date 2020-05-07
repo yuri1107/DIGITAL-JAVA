@@ -1,49 +1,68 @@
 package student;
 
-//학생 한명당 정보 클래스
-public class Student {
-		/* 학생들을 관리하는 프로그램을 작성하세요.
-		 * - 학생 정보 : 학년(grade), 반(classNum), 번호(num), 이름(name)
-		 * 국어(Korean), 영어(English), 수학(Math) 등
-		*/
-		
-		int grade; //학년
-		int classNum; //반
-		int num; //번호
-		String name; // 이름
-		
-		int korean; // 국어
-		int english; // 영어
-		int math; // 수학
-		int score; // 평균 점수
-		
-		//생성자
-		public Student () {}
-		public Student (int grade, int classNum, int num, String name, int korean, int english, int math, int score) {
-			this.grade = grade;
-			this.classNum = classNum;
-			this.num = num;
-			this.name = name;
-			this.korean = korean;
-			this.english = english;
-			this.math = math;
-			this.score = score;
-		}
-		
-		/*
-		public Student (int grade, int classNum, int num, String name, int...sub) { //매개변수를 가변인자로 만들면 더 좋지않을까
-			this.grade = grade;
-			this.classNum = classNum;
-			this.num = num;
-			this.name = name;
-			this.korean = korean;
-			this.english = english;
-			this.math = math;
-			this.score = score;		
-		} 
-		*/
+//선생님이 하신거
+public class StudentT {
+	private String name="";
+	private int grade;
+	private int classNum;
+	private int num;
+	
+	private Subject score[];
+	
+	//private SubjectT kor,eng,math;
+	
+	//기능설정
+	public boolean equal(int grade, int classNum, int num, String name) {
+		if (this.grade != grade) return false;
+		if (this.classNum != classNum) return false;
+		if (this.num != num) return false;
+		if (this.name.equals(name)) return false;
+		return true;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getGrade() {
+		return grade;
+	}
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+	public int getClassNum() {
+		return classNum;
+	}
+	public void setClassNum(int classNum) {
+		this.classNum = classNum;
+	}
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public SubjectT getKor() {
+		return kor;
+	}
+	public void setKor(SubjectT kor) {
+		this.kor = kor;
+	}
+	public SubjectT getEng() {
+		return eng;
+	}
+	public void setEng(SubjectT eng) {
+		this.eng = eng;
+	}
+	public SubjectT getMath() {
+		return math;
+	}
+	public void setMath(SubjectT math) {
+		this.math = math;
+	}
+
+
+	
 }
-
-
-//-------------------------------------------------------------------------------------------
-

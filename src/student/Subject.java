@@ -1,15 +1,76 @@
 package student;
 
-//과목정보 클래스
-public class Subject {
-
-	public static void main(String[] args) {
-		int korean; // 국어
-		int english; // 영어
-		int math; // 수학
-		int score; // 평균 점수
-		
-		
+public class SubjectT {
+	private String title;
+	private int midterm;
+	private int finals;
+	private int performance;
+	private int attendance;
+	
+	public void print() {
+		System.out.println("======="+title+"성적=======");
+		System.out.println("중간고사 : " + midterm);
+		System.out.println("기말고사 : " + midterm);
+		System.out.println("수행평가 : " + midterm);
+		System.out.println("출석점수 : " + midterm);
+		System.out.println("=======================");
 	}
 
+	public SubjectT(String title, int midterm, int finals, int performance, int attendance) {
+		super();
+		this.title = title;
+		this.midterm = midterm;
+		this.finals = finals;
+		this.performance = performance;
+		this.attendance = attendance;
+	}
+	
+	public Subject (Subject subject) {
+		midterm = subject.midterm;
+		finals = subject.finals;
+		performance = subject.performance;
+		attendance = subject.attendance;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public int getMidterm() {
+		return midterm;
+	}
+
+	public void setMidterm(int midterm) {
+		this.midterm = midterm;
+	}
+
+	public int getFinals() {
+		return finals;
+	}
+
+	public void setFinals(int finals) {
+		this.finals = finals;
+	}
+
+	public int getPerformance() {
+		return performance;
+	}
+
+	public void setPerformance(int performance) {
+		this.performance = performance;
+	}
+
+	public int getAttendance() {
+		return attendance;
+	}
+
+	public void setAttendance(int attendance) {
+		this.attendance = attendance;
+	}
+
+	
 }
