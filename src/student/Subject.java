@@ -32,10 +32,6 @@ public class Subject {
 		title = subject.title;
 	}
 
-	
-	
-	
-	//getter, setter 설정
 	public String getTitle() {
 		return title;
 	}
