@@ -1,6 +1,12 @@
 package student;
 
+
 import java.util.Scanner;
+/* 선생님이 하신거에다가
+ * 개명할 사람이 없다는 가정 하에 파이널변수로 이름  입력받아보기
+ * 입력했던 학생부의 값을 다른 파일로 저장받아보기
+ * 
+*/
 
 public class StudentDepartment {
 
