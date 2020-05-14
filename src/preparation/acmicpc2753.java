@@ -27,7 +27,6 @@ public class acmicpc2753 {
 			}else {System.out.println("윤년이 아님");}
 		} 
 		
-		//
 		
 	}
 
