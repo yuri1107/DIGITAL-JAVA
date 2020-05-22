@@ -1,4 +1,4 @@
-package day21;
+package assignment;
 
 import java.time.*;
 import java.util.*;
@@ -6,21 +6,22 @@ import java.util.*;
 public class CashBookMain {
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		/*
+		CONSUM_CATEGORY [] list = CONSUM_CATEGORY.values();
+		for(int i = 0 ; i<list.length; i++)
+			System.out.print(list[i] + ", ");
 		
-//		Scanner scan = new Scanner(System.in);
-//		CONSUM_CATEGORY [] list = CONSUM_CATEGORY.values();
-//		for(int i = 0 ; i<list.length; i++)
-//			System.out.print(list[i] + ", ");
-//		
-//		System.out.println();
-//		
-//		printMenu();
-//		System.out.println("일자를 입력하세요.");
-//		LocalDate paymentDay = LocalDate.of(scan.nextInt(),scan.nextInt(),scan.nextInt());
-//		System.out.println(paymentDay);
-//		
-//		
-//		scan.close();
+		System.out.println();
+		*/
+		/*
+		printMenu();
+		System.out.println("일자를 입력하세요.");
+		LocalDate paymentDay = LocalDate.of(scan.nextInt(),scan.nextInt(),scan.nextInt());
+		System.out.println(paymentDay);
+		*/
+		
+		scan.close();
 	} // main close
 
 	//메뉴 프린트
@@ -62,8 +63,8 @@ public class CashBookMain {
 				consumBook.add(m.toString());
 				//카테고리도 넣어야함..!
 				
-				//Book c = new Book(m, tempcategori.toString());
-				
+				//Book c = new Book(m);
+				//Book.add
 				System.out.println(consumBook + "을 추가했습니다.");
 			}
 		}
